@@ -1,0 +1,79 @@
+MMU    
+
+
+SCHEDULER
+create job queue ready queue and blocked queue
+
+struct Process job_queue
+struct Process ready_queue
+struct Process blocked_queue
+
+schedule_jobs(schedule_config, Process process_list)
+run_scheduler() -for all processes in ready queue
+				--send the process to the CPU
+
+
+
+STRUCTURES
+struct Process
+-int PID
+-enum state
+-struct MetaData operation_list
+-struct Process next
+
+struct MetaData
+-int cycle_time
+-char command
+-char* operation
+-struct MetaData next
+
+struct Config
+-config stuff
+
+UTILITY   
+
+
+DRIVER
+-parse config
+-create processes
+-start running
+
+struct Config config
+parse_config()
+
+struct Process process_list
+parse_processes() //get process_list for scheduler
+
+schedule_jobs(config->schedule_config, process_list)
+
+CPU
+execute_process(Process) -set Process to STATE: running
+						 -for each task in process
+					     --execute_task(task)
+execute_task(task) -if task is IO 
+				   --spawn thread to sleep
+				   --return PROCESS_BLOCKED
+				   -if task is allocate
+				   --allocate memory
+				   
+				   -else
+				   --sleep for amount of cycles
+
+CONFIG_PARSER
+parse_config(filepath *Config struct)
+
+PROCESS_PARSER
+-take in a filepath
+-store metadatas
+-break up metadatas into complete processes
+--processes contain:
+---process ID
+---cycle time (I/O = IOCT * meta cycle time) (other = PCT * meta cycle time)
+-give back a linked list of processes
+parse_processes(metadata filepath, IOCT, PCT, *Process struct)
+
+
+
+
+220 -175- 395
+300 -125- 425
