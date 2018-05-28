@@ -1,0 +1,146 @@
+The program meta-data components are as follows:
+
+S – operating System, used with start and end
+A – Program Application, used with start and end
+P – Process, used with run
+M – Memory operations
+I – used with Input operation descriptors such as hard drive, keyboard
+O – used with Output operation descriptors such as hard drive, printer,
+monitor
+
+Start Program Meta-Data Code:
+S(start)0; A(start)0; M(allocate)2048; I(hard drive)14; P(run)7;
+O(hard drive)5; I(keyboard)8; O(hard drive)10; I(keyboard)15;
+P(run)10; O(monitor)11; I(keyboard)14; M(access)256512;
+O(printer)8; A(end)0; S(end)0.
+End Program Meta-Data Code.
+
+The form for all meta-data operations other than memory management
+is as follows:
+<component letter>(<operation>)<cycle time>; <successive meta-data
+operation>; . . . <last operation>
+
+The form for memory management operations is as follows:
+To initially allocate memory for a program,
+M(allocate)<size, as integer>;
+To access memory within a program,
+M(access)<memory Start + memory size Requested, as integer>
+e.g., M(access)SSSRRR;
+
+RUNNING THE SIMULATOR
+The simulator will input a configuration file that is accepted from the command
+line, as follows:
+./sim0x config_1.cnf
+
+CONFIG FILE:
+
+Start Simulator Configuration File
+Version/Phase: 1.0					USE INT must be < 10
+File Path: Test_3.mdf
+CPU Scheduling Code: NONE
+Quantum Time (cycles): 55
+Memory Available (KB): 667
+Processor Cycle Time (msec): 10
+I/O Cycle Time (msec): 20
+Log To: Monitor
+Log File Path: logfile_1.lgf
+End Simulator Configuration File.
+
+CPU Scheduling Code: This line will hold any of the following: NONE, FCFSN,
+SJF-N, SRTF-P, FCFS-P, RR-P. If NONE is encountered, it should default
+to FCFS-N. No other code names are allowed, and if any are found, the data
+access must be aborted, and the configuration function must signal failure to
+the calling function.
+
+Quantum Time: This line will hold an integer specifying the quantum time for
+the Simulator. For the first couple of projects, this will be zero and/or will be
+ignored by the program although it must still be stored in the data structure.
+Specification: 0 ≤ Q ≤ 10
+
+File Path: This line must contain the file path where the meta-data will be
+found. While it could include directories, the assignment requirement is that the
+data be in the same directory as the program
+
+Memory Available: This line will hold an integer specifying the system
+memory that will be available. For the first couple of projects this may also be
+zero and/or ignored although it must still be stored in the data structure.
+Specification: 0 ≤ MA ≤ 1,048,576 (1 MB)
+
+Processor Cycle Time (msec): This line will hold an integer cycle time that
+will specify the number of milliseconds each processor cycle will consume.
+1 ≤ PCT ≤ 1,000
+
+I/O Cycle Time (msec): This line will also hold an integer cycle time like the
+processor cycle time.
+1 ≤ IOCT ≤ 10,000
+
+Log To: This line will hold one of three terms, being Monitor, File, or Both.
+No other code names are allowed, and if any are found, the data access must
+be aborted, and the configuration input function must signal failure to the
+calling function
+
+Log File Path: This line will hold the file path of the log file, which is used if
+“Log To:” has selected either File or Both. It must still hold some string
+quantity even if “Log To:” is set to Monitor (e.g. nologfile, or none)
+Finally, the last “End Simulator . . . “ is ignored
+
+Start Program Meta-Data Code:
+S(start)0; A(start)0; M(allocate)2048; I(hard drive)14; P(run)7;
+O(hard drive)5; I(keyboard)8; O(hard drive)10; I(keyboard)15;
+P(run)10; O(monitor)11; I(keyboard)14; M(access)256512;
+O(printer)8; A(end)0; S(end)0.
+End Program Meta-Data Code.
+
+
+
+The program meta-data descriptors are as follows:
+access, allocate, end, hard drive, keyboard, printer, monitor, run, start
+
+The cycle time in the meta-data program must be set to zero when it is not applicable to
+the operation, but it is always required as part of the meta-data code.
+
+
+INITIATION:
+
+The program must be run with the following command from the command line
+./sim0x config1.cnf
+
+The parser shall then 
+1. open the config file
+2. error check the config file
+3. close the config file
+4. open the meta-data file
+5. error check the meta-data file
+6. close the meta-data file
+
+The extracter will start upon successfull completion of the parser
+ @param configData struct
+ @param config file name
+ @param linkedlist meta-data node head
+ 1. open the config file
+ 2. find the attribute name
+ 3. find the attribute value
+ 4. fill configData with correct data
+ 5. close the config file
+ 6. open meta-data file
+ 7. find attribute name
+ 8. find attribute value
+ 9. close meta-data file
+ 10. check empty meta-data head node param
+		head empty?
+ 11:12.		create new meta-data node : add after meta-data node
+
+skip first line 
+read char by char until ":" is reached
+store each char into temp_string
+data after ":"
+for attributes in attributes list
+compare the temp_string with the attribute
+if the attribute is not present in the attributes list
+report error
+if it is present
+get the index of the attribute list
+using the index find out where to put data in configData
+
+TODO:
+maxlinelen MACRO
