@@ -1,0 +1,98 @@
+Time:  0.000001, System Start
+Time:  0.001259, OS: Begin PCB Creation
+Time:  0.001264, OS: All processes initialized in New state
+Time:  0.001265, OS: All processes now set in Ready state
+Time:  0.001266, OS: FCFS-N Strategy selects Process 0 with time: 11100 mSec
+Time:  0.001266, Process 0 set in Running state
+Time:  0.001267, Process 0, Memory management allocate action start
+Time:  0.001270, Process 0, Memory management allocate action start
+Time:  0.001270, Process 0, harddrive input start
+Time:  0.001272, Process 0, harddrive input end
+Time:  0.001273, Process 0, harddrive output start
+Time:  0.001273, Process 0, harddrive output end
+Time:  0.001274, Process 0, keyboard input start
+Time:  0.001274, Process 0, keyboard input end
+Time:  0.001275, Process 0, harddrive input start
+Time:  0.001275, Process 0, harddrive input end
+Time:  0.001276, Process 0, harddrive output start
+Time:  0.001277, Process 0, harddrive output end
+Time:  0.001277, Process 0, harddrive output start
+Time:  0.001278, Process 0, harddrive output end
+Time:  0.001278, Process 0, printer output start
+Time:  0.001279, Process 0, printer output end
+Time:  0.001280, Process 0, keyboard input start
+Time:  0.001281, Process 0, keyboard input end
+Time:  0.001282, Process 0, keyboard input start
+Time:  0.001282, Process 0, keyboard input end
+Time:  0.001283, Process 0, keyboard input start
+Time:  0.001283, Process 0, keyboard input end
+Time:  0.001284, OS: Process 0 set in Exit state
+Time:  0.001284, OS: FCFS-N Strategy selects Process 1 with time: 6870 mSec
+Time:  0.001284, Process 1 set in Running state
+Time:  0.001286, Process 1, harddrive input start
+Time:  0.001286, Process 1, harddrive input end
+Time:  0.001287, Process 1, harddrive input start
+Time:  0.001287, Process 1, harddrive input end
+Time:  0.001288, Process 1, monitor output start
+Time:  0.001289, Process 1, monitor output end
+Time:  0.001291, Process 1, harddrive input start
+Time:  0.001291, Process 1, harddrive input end
+Time:  0.001292, Process 1, harddrive input start
+Time:  0.001292, Process 1, harddrive input end
+Time:  0.001293, Process 1, printer output start
+Time:  0.001294, Process 1, printer output end
+Time:  0.001294, Process 1, keyboard input start
+Time:  0.001295, Process 1, keyboard input end
+Time:  0.001296, OS: Process 1 set in Exit state
+Time:  0.001296, OS: FCFS-N Strategy selects Process 2 with time: 10770 mSec
+Time:  0.001296, Process 2 set in Running state
+Time:  0.001297, Process 2, Memory management allocate action start
+Time:  0.001298, Process 2, Memory management allocate action start
+Time:  0.001299, Process 2, printer output start
+Time:  0.001299, Process 2, printer output end
+Time:  0.001301, Process 2, printer output start
+Time:  0.001302, Process 2, printer output end
+Time:  0.001303, Process 2, harddrive input start
+Time:  0.001303, Process 2, harddrive input end
+Time:  0.001304, Process 2, harddrive output start
+Time:  0.001305, Process 2, harddrive output end
+Time:  0.001305, Process 2, printer output start
+Time:  0.001306, Process 2, printer output end
+Time:  0.001307, Process 2, keyboard input start
+Time:  0.001307, Process 2, keyboard input end
+Time:  0.001308, Process 2, keyboard input start
+Time:  0.001309, Process 2, keyboard input end
+Time:  0.001309, Process 2, harddrive input start
+Time:  0.001310, Process 2, harddrive input end
+Time:  0.001311, OS: Process 2 set in Exit state
+Time:  0.001313, OS: FCFS-N Strategy selects Process 3 with time: 6385 mSec
+Time:  0.001313, Process 3 set in Running state
+Time:  0.001314, Process 3, printer output start
+Time:  0.001315, Process 3, printer output end
+Time:  0.001316, Process 3, harddrive input start
+Time:  0.001316, Process 3, harddrive input end
+Time:  0.001317, Process 3, harddrive output start
+Time:  0.001318, Process 3, harddrive output end
+Time:  0.001318, Process 3, keyboard input start
+Time:  0.001319, Process 3, keyboard input end
+Time:  0.001320, Process 3, harddrive output start
+Time:  0.001321, Process 3, harddrive output end
+Time:  0.001321, Process 3, harddrive input start
+Time:  0.001322, Process 3, harddrive input end
+Time:  0.001323, OS: Process 3 set in Exit state
+Time:  0.001325, OS: FCFS-N Strategy selects Process 4 with time: 5266 mSec
+Time:  0.001325, Process 4 set in Running state
+Time:  0.001326, Process 4, harddrive output start
+Time:  0.001327, Process 4, harddrive output end
+Time:  0.001328, Process 4, printer output start
+Time:  0.001329, Process 4, printer output end
+Time:  0.001329, Process 4, harddrive input start
+Time:  0.001330, Process 4, harddrive input end
+Time:  0.001331, Process 4, printer output start
+Time:  0.001332, Process 4, printer output end
+Time:  0.001333, Process 4, harddrive output start
+Time:  0.001333, Process 4, harddrive output end
+Time:  0.001334, Process 4, harddrive input start
+Time:  0.001335, Process 4, harddrive input end
+Time:  0.001336, OS: Process 4 set in Exit state
+Time:  0.001336, OS: System stop
