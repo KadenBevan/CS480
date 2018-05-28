@@ -1,0 +1,62 @@
+Time:  0.000001, System Start
+Time:  0.000011, OS: Begin PCB Creation
+Time:  0.002381, OS: All processes now set in New state
+Time:  0.002383, OS: All processes now set in Ready state
+Time:  0.002384, OS: FCFS-N Strategy selects Process 0 with time: 530 mSec
+Time:  0.002384, Process 0 set in Running state
+Time:  0.002397, Process 0, start operation start
+Time:  0.002399, Process 0, start operation end
+Time:  0.002401, Process 0, start operation start
+Time:  0.002402, Process 0, start operation end
+Time:  0.002402, OS: Process 0, MMU Allocation: 10/100/225 start
+Time:  0.002403, OS: Process 0, MMU Allocation: Successful
+Time:  0.002404, Process 0, harddrive input start
+Time:  0.662552, Process 0, harddrive input end
+Time:  0.662559, Process 0, harddrive operation start
+Time:  0.992560, Process 0, harddrive operation end
+Time:  0.992562, Process 0, harddrive output start
+Time:  1.532693, Process 0, harddrive output end
+Time:  1.532700, Process 0, harddrive operation start
+Time:  1.802701, Process 0, harddrive operation end
+Time:  1.802703, Process 0, keyboard input start
+Time:  3.402833, Process 0, keyboard input end
+Time:  3.402840, Process 0, keyboard operation start
+Time:  4.202842, Process 0, keyboard operation end
+Time:  4.202845, Process 0, harddrive input start
+Time:  4.562967, Process 0, harddrive input end
+Time:  4.562974, Process 0, harddrive operation start
+Time:  4.742975, Process 0, harddrive operation end
+Time:  4.742977, Process 0, harddrive output start
+Time:  5.523104, Process 0, harddrive output end
+Time:  5.523111, Process 0, harddrive operation start
+Time:  5.913113, Process 0, harddrive operation end
+Time:  5.913116, Process 0, harddrive output start
+Time:  6.573231, Process 0, harddrive output end
+Time:  6.573238, Process 0, harddrive operation start
+Time:  6.903240, Process 0, harddrive operation end
+Time:  6.903246, Process 0, printer output start
+Time:  7.703365, Process 0, printer output end
+Time:  7.703372, Process 0, printer operation start
+Time:  8.103374, Process 0, printer operation end
+Time:  8.103376, Process 0, keyboard input start
+Time: 10.303500, Process 0, keyboard input end
+Time: 10.303508, Process 0, keyboard operation start
+Time: 11.403509, Process 0, keyboard operation end
+Time: 11.403512, Process 0, keyboard input start
+Time: 13.403638, Process 0, keyboard input end
+Time: 13.403645, Process 0, keyboard operation start
+Time: 14.403647, Process 0, keyboard operation end
+Time: 14.403650, Process 0 set in Exit state
+Time: 14.403651, OS: FCFS-N Strategy selects Process 1 with time: 330 mSec
+Time: 14.403651, Process 1 set in Running state
+Time: 14.403660, Process 1 set in Exit state
+Time: 14.403661, OS: FCFS-N Strategy selects Process 2 with time: 571 mSec
+Time: 14.403661, Process 2 set in Running state
+Time: 14.403664, Process 2 set in Exit state
+Time: 14.403664, OS: FCFS-N Strategy selects Process 3 with time: 354 mSec
+Time: 14.403664, Process 3 set in Running state
+Time: 14.403667, Process 3 set in Exit state
+Time: 14.403667, OS: FCFS-N Strategy selects Process 4 with time: 303 mSec
+Time: 14.403667, Process 4 set in Running state
+Time: 14.403670, Process 4 set in Exit state
+Time: 14.403671, OS: System stop
