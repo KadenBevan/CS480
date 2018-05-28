@@ -1,0 +1,71 @@
+Time:  0.000002, System Start
+Time:  0.000017, OS: Begin PCB Creation
+Time:  0.000680, OS: All processes now set in New state
+Time:  0.000682, OS: All processes now set in Ready state
+Time:  0.000683, OS: SJF Strategy selects Process 4 with time: 303 mSec
+Time:  0.000683, Process 4 set in Running state
+Time:  0.000687, Process 4 set in Exit state
+Time:  0.000688, OS: SJF Strategy selects Process 1 with time: 330 mSec
+Time:  0.000688, Process 1 set in Running state
+Time:  0.000692, Process 1 set in Exit state
+Time:  0.000692, OS: SJF Strategy selects Process 3 with time: 354 mSec
+Time:  0.000692, Process 3 set in Running state
+Time:  0.000694, Process 3 set in Exit state
+Time:  0.000695, OS: SJF Strategy selects Process 0 with time: 530 mSec
+Time:  0.000695, Process 0 set in Running state
+Time:  0.000696, Process 0, start operation start
+Time:  0.000699, Process 0, start operation end
+Time:  0.000700, Process 0, start operation start
+Time:  0.000701, Process 0, start operation end
+Time:  0.000702, OS: Process 0, MMU Allocation: 10/100/225 start
+Time:  0.000704, OS: Process 0, MMU Allocation: Successful
+Time:  0.000705, Process 0, harddrive input start
+Time:  0.660774, Process 0, harddrive input end
+Time:  0.660778, Process 0, harddrive operation start
+Time:  0.990779, Process 0, harddrive operation end
+Time:  0.990783, Process 0, harddrive output start
+Time:  1.530814, Process 0, harddrive output end
+Time:  1.530819, Process 0, harddrive operation start
+Time:  1.800820, Process 0, harddrive operation end
+Time:  1.800823, Process 0, keyboard input start
+Time:  3.400909, Process 0, keyboard input end
+Time:  3.400916, Process 0, keyboard operation start
+Time:  4.200917, Process 0, keyboard operation end
+Time:  4.200924, Process 0, harddrive input start
+Time:  4.561017, Process 0, harddrive input end
+Time:  4.561022, Process 0, harddrive operation start
+Time:  4.741029, Process 0, harddrive operation end
+Time:  4.741032, Process 0, harddrive output start
+Time:  5.521111, Process 0, harddrive output end
+Time:  5.521118, Process 0, harddrive operation start
+Time:  5.911119, Process 0, harddrive operation end
+Time:  5.911123, Process 0, harddrive output start
+Time:  6.571210, Process 0, harddrive output end
+Time:  6.571215, Process 0, harddrive operation start
+Time:  6.901216, Process 0, harddrive operation end
+Time:  6.901219, Process 0, printer output start
+Time:  7.701300, Process 0, printer output end
+Time:  7.701305, Process 0, printer operation start
+Time:  8.101306, Process 0, printer operation end
+Time:  8.101310, Process 0, keyboard input start
+Time: 10.301390, Process 0, keyboard input end
+Time: 10.301399, Process 0, keyboard operation start
+Time: 11.401401, Process 0, keyboard operation end
+Time: 11.401405, Process 0, keyboard input start
+Time: 13.401487, Process 0, keyboard input end
+Time: 13.401492, Process 0, keyboard operation start
+Time: 14.401493, Process 0, keyboard operation end
+Time: 14.401497, Process 0 set in Exit state
+Time: 14.401499, OS: SJF Strategy selects Process 2 with time: 571 mSec
+Time: 14.401499, Process 2 set in Running state
+Time: 14.401501, Process 2 set in Exit state
+Time: 14.401501, OS: SJF Strategy selects Process 2 with time: 571 mSec
+Time: 14.401501, Process 2 set in Running state
+Time: 14.401503, Process 2 set in Exit state
+Time: 14.401503, OS: SJF Strategy selects Process 2 with time: 571 mSec
+Time: 14.401503, Process 2 set in Running state
+Time: 14.401508, Process 2 set in Exit state
+Time: 14.401509, OS: SJF Strategy selects Process 2 with time: 571 mSec
+Time: 14.401509, Process 2 set in Running state
+Time: 14.401510, Process 2 set in Exit state
+Time: 14.401511, OS: System stop
